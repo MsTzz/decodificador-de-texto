@@ -1,7 +1,4 @@
-<h1 style="display: flex; justify-content: space-between; align-items: center; ">
-  <span>Decodificador de Texto</span>
-  <img src="assets/logo_alura.png" alt="Logo da Alura" height="50">
-</h1>
+## Decodificador de Texto
 
 Bem-vindo ao Decodificador de Texto! Este projeto foi desenvolvido como parte do **Challenge Decodificador de Texto**, que integra a **formação Iniciante em Programação da Alura** na trilha **ONE 7 - Oracle Next Education**.
 

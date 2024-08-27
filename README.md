@@ -11,7 +11,7 @@ Bem-vindo ao Decodificador de Texto! Este projeto foi desenvolvido como parte do
 
 
 ## Funcionalidades
-
+ 
 - **Criptografia e Descriptografia ALURA:** Substitui letras do texto por padrões específicos, como "e" por "enter" e "a" por "ai".
 - **Criptografia e Descriptografia AES:** Utiliza o padrão avançado de criptografia AES-GCM, proporcionando alta segurança com geração de chaves dinâmicas.
 - **Verificação de Texto:** O texto inserido deve conter apenas letras minúsculas e sem acentos ou números.

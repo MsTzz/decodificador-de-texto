@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="shortcut icon" type="imagex/png" href="assets/logo_alura.ico">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <a href="index.html">
+            <img class="logo_alura" src="assets/logo_alura.png" alt="Logo da Alura">
+        </a>
+    </header>
+
+    <main class="conteudo">
+        <section class="conteudo_coluna_1">
+            <h2 class="texto_infor" style="text-align: center">Decodificador de Texto</h2>
+            <textarea class="text_area" id="texto" rows="5" cols="33" placeholder="Digite aqui seu texto" label="Área de texto"></textarea>
+            
+            <div class="OBS">
+                <img src="assets/caution.png" alt="Atenção!">
+                <p class="OBS__texto">Apenas letras minúsculas e sem acento.</p>
+            </div>
+
+            <fieldset class="tipo_cripto">
+                <legend class="texto_infor">Escolha um tipo de criptografia:</legend>
+                
+                <input type="radio" class="tipo_cripto__opcao" id="alura" name="criptografia" value="ALURA" checked>
+                <label for="alura">ALURA</label><br>
+            
+                <input type="radio" class="tipo_cripto__opcao" id="aes" name="criptografia" value="AES">
+                <label for="aes">AES</label><br>
+                
+            </fieldset>        
+        
+            <div class="chave_cripto">
+                <label class="texto_infor" for="chave" >Insira a chave de criptografia (se necessário):</label>
+                <input type="text" id="chave" name="chave" autocomplete="off" placeholder="Digite aqui sua Chave">
+            </div>
+
+            <div class="botoes__crip__e__descrip">
+                <button class="botao__crip" onclick="criptografar()">Criptografar</button>
+                <button class="botao__descrip" onclick="tipoDescrip()">Descriptografar</button>
+            </div>
+        </section>
+        
+        <section class="conteudo_coluna_2">
+            <div class="card">
+                <div class="card__conteudo">
+                    <section class="card__conteudo__antes">
+                        <p class="card__conteudo__texto">Digite um texto para começar! </p><br>
+                        <img class="card__conteudo__imagem" id="img_procura_texto" src="assets/desenho-procurando-texto.png" alt="Um personagem procurando um texto"><br><br>
+                        <p class="card__conteudo__texto">Caso tenha uma chave digite ao lado!</p>
+                    </section>
+                    <div class="card__conteudo__depois">
+                        <label class="card__conteudo__texto">Texto Criptografado</label>
+                        <textarea id="resultado" disabled></textarea>
+                        
+                        <label class="card__conteudo__texto" id="resultado__key__texto">Chave De Criptografia</label>
+                        <textarea id="resultado__key" disabled></textarea>     
+                    </div>
+                        <div class="card__conteudo__botoes">
+                          <button class="botao__cop" id="botao__cop__texto" onclick="copiarTexto()">Copiar Texto</button>
+                          <button class="botao__cop" id="botao__cop__key" onclick="copiarKey()">Copiar Key</button>
+                        </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>© 2024 Kaio Victor. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="scripts/script.js" defer></script>
+</body>
+</html>

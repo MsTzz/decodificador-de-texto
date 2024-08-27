@@ -222,6 +222,7 @@ body {
 }
 
 .rodape{
+  display: block;
   background-color: #121212;
   color: #aaaaaa;
   padding: 24px;
